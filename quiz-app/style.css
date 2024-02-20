@@ -1,5 +1,6 @@
 .btn_start,
-.quiz_box {
+.quiz_box,
+.score_box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -80,4 +81,75 @@
     opacity: 1;
     pointer-events: auto;
     transform: scale(1);
+}
+
+.card-header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    
+}
+
+#question-count{
+    float: right;
+}
+
+/* Score Box */
+.score_box.active {
+    opacity: 1;
+    pointer-events: auto;
+
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.score_box {
+    width: 550px;
+    height: 550px;
+
+    transform: translate(-50%, -50%) scale(0.7);
+    transition: all 0.3s ease;
+
+    opacity: 0;
+    pointer-events: none;
+
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:30px;
+}
+
+.score_box .score_text {
+    font-size:18px;
+    font-weight:500;
+    margin-bottom:15px;
+}
+
+.card-footer, .timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time_second{
+    margin-left:5px;
+    font-size:20px;
+}
+
+.timer{
+    font-weight:500;
+}
+
+
+.time_line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    /* width: 550px; 0 ila  550 arasında bunu javascript ile yürüteceğiz.*/
+    background-color: #f0a500;
+}
+
+.quiz_box header {
+    position: relative;
 }
