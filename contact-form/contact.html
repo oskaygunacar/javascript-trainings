@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Contact Form Practice</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" id="contactForm">
+            <h2>Contact Us</h2>
+
+            <div class="inputs">
+                <div class="inputGroup">
+                    <label for="name">First Name *</label>
+                    <input type="text" name="name" id="" required class="form-control">
+                </div>
+                <div class="inputGroup">
+                    <label for="lastname">Last Name *</label>
+                    <input type="text" name="lastname" id="" required class="form-control">
+                </div>
+            </div>
+    
+            <div class="inputGroup w-100">
+                <!-- Email Width 100 -->
+                <label for="email">Email Address *</label>
+                <input type="email" name="email" id="" class="form-control w-100" required>
+            </div>
+    
+            <label for="queryType" >Query Type *</label>
+            <!-- Query Type Codes -->
+
+            <div class="inputs">
+                <div class="inputGroup input-border inputs-row">
+                    <input type="radio" name="queryType" value="general">
+                    <label for="">General Enquiry</label>
+                </div>
+                <div class="inputGroup input-border inputs-row">
+                    <input type="radio" name="queryType" value="support">
+                    <label for="">Support Request</label>
+                </div>
+            </div>
+
+            <div class="errorMsg">
+                <p>Please select one of the queries above !</p>
+            </div>
+
+
+            <label for="message"> Message * </label>
+            <textarea class="form-control mb-10" name="message" id="" cols="30" rows="10" required></textarea>
+
+
+            <div class="inputGroup w-100 d-flex mb-10">
+                <input type="checkbox" name="aggrement" id="aggrementCheckbox">
+                <label for="aggrement"> I consent to being condacted by the team *</label>
+            </div>
+
+            <div class="aggrementError">
+                <p>Please check the agreement checbox for the future process.</p>
+            </div>
+
+            <button type="submit" class="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <div class="successMessage">
+        <button class="successCloseBtn">X</button>
+        <h2>Thank you for contacting us !</h2>
+        <p>We will get back to you as soon as possible.</p>
+    </div>
+
+    <script src="contact.js"></script>
+    
+</body>
+</html>

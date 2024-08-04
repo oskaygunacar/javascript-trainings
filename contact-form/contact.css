@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(148, 38%, 91%);
+}
+
+#contactForm {
+    background-color: white;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 700px;
+}
+
+#contactForm h2{
+    font-size: 35px;
+    color: hsl(187, 24%, 22%);
+    margin: 10px 0;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    margin-bottom:10px;
+}
+
+.inputs-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size:16px;
+}
+
+.inputs-row > input[type="radio"] {
+    margin: 0 10px 0 0;
+    width: 19px;
+    height: 19px;;
+}
+
+.form-control {
+    padding: 15px;
+    border: 1px solid hsl(150, 2%, 24%);
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+#contactForm label {
+    font-size: 16px;
+    color: hsl(187, 24%, 22%);
+    margin: 15px 0;
+}
+
+.input-border {
+    border: 1px solid hsl(169, 82%, 27%);
+    border-radius: 5px;
+    padding: 0px 20px;
+    height: 50px;
+}
+
+.submitBtn {
+    background-color: hsl(169, 82%, 27%);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 11px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+.submitBtn:hover {
+    cursor: pointer;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+#contactForm input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Error Message */
+
+.errorMsg, .aggrementError {
+    display: none;
+    background-color: white;
+    width: 100%;
+}
+
+.errorMsg p, .aggrementError p {
+    color: hsl(0, 100%, 74%);
+    font-size: 16px;
+    border: 3px solid #ccc;
+    padding: 30px;
+    border-radius: 18px;
+    font-weight: 800;
+}
+
+/* Success Message */
+
+.successMessage {
+    background-color: white;
+    padding: 30px;
+    width: 500px;
+    border-radius: 30px;
+    margin:100px auto;
+    position: relative;
+    text-align: center;
+    display: none;
+}
+
+.successMessage h2 {
+    color: hsl(187, 24%, 22%);
+}
+
+.successMessage p {
+    color: hsl(169, 82%, 27%);
+}
+
+.successCloseBtn {
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    position:absolute;
+    top: 12px;
+    right:20px;
+    cursor: pointer;
+}
+
+/* Mobile CSS */
+@media (max-width: 768px) {
+    #contactForm {
+        width: 90%;
+    }
+
+    .inputGroup {
+        width: 100%;
+    }
+}
